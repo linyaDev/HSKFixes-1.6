@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>HSK Fixes 1.6</name>
+	<author>linyaDev</author>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<packageId>linya.hskfixes16</packageId>
+	<description>
+[English]
+Bug fixes for Hardcore SK modpack (RimWorld 1.6).
+Temporary — will be removed once fixed in the main HSK release.
+
+- Burn bills fix: burn weapon/apparel/drugs at the kiln and campfire cremation were never executed by pawns (recipes demanded a hauling-type workgiver the kiln doesn't have). Now done by crafters.
+
+[Russian]
+Багфиксы для модпака Hardcore SK (RimWorld 1.6).
+Временные — будут удалены после исправления в основной версии HSK.
+
+- Фикс сжигания: «сжечь оружие/одежду/наркотики» в печи и кремация на костре никогда не выполнялись пешками (рецепты требовали воркгивер-носильщик, которого у печи нет). Теперь выполняются ремесленниками.
+	</description>
+	<modDependencies>
+		<li>
+			<packageId>brrainz.harmony</packageId>
+			<displayName>Harmony</displayName>
+		</li>
+	</modDependencies>
+	<loadAfter>
+		<li>Ludeon.RimWorld</li>
+		<li>brrainz.harmony</li>
+		<li>skyarkhangel.HSK</li>
+	</loadAfter>
+</ModMetaData>

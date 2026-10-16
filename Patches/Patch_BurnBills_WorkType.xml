@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<!-- Vanilla burn recipes demand a Hauling-type bill workgiver (crematorium style),
+	     but the HSK Kiln is only covered by DoBillsKiln (Crafting) — HSK's Hauling
+	     workgiver DoBillsCremate and its recipe overrides are commented out in Core_SK.
+	     Result: burn weapon/apparel/drugs bills (and campfire cremation) can never be
+	     picked up by any pawn. Drop the work-type requirement so crafters do them,
+	     same as HSK's own (commented) recipe overrides intended. -->
+	<Operation Class="PatchOperationRemove">
+		<xpath>Defs/RecipeDef[
+			defName="BurnWeapon" or
+			defName="BurnApparel" or
+			defName="BurnDrugs" or
+			defName="CremateCorpseCampfire"]/requiredGiverWorkType</xpath>
+	</Operation>
+</Patch>
